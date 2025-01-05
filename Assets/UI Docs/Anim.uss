@@ -1,0 +1,60 @@
+.AnimationObjectField {
+    flex-shrink: 0;
+    position: relative;
+    width: auto;
+    max-width: none;
+}
+
+.AnimationIntegerField {
+    flex-shrink: 0;
+    width: auto;
+}
+
+.AnimationLabelField {
+    height: 19.5px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -unity-text-align: middle-center;
+    -unity-font-style: normal;
+}
+
+.BorderDown1Px {
+    border-left-color: rgb(128, 128, 128);
+    border-right-color: rgb(128, 128, 128);
+    border-top-color: rgb(128, 128, 128);
+    border-bottom-color: rgb(128, 128, 128);
+    border-bottom-width: 1px;
+}
+
+.Field22PxSize {
+    height: 22px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.Field22LabelPxSize {
+    height: 21.8px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.EventFieldClass {
+}

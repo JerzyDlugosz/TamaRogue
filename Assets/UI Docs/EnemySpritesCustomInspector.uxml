@@ -1,0 +1,100 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/CustomInspector/Anim.uss?fileID=7433441132597879392&amp;guid=bd652d9722b9423438994e98e995b327&amp;type=3#Anim" />
+    <uie:EnumField label="Animation Type" value="Center" binding-path="animationType" name="AnimationEnum" />
+    <ui:GroupBox style="border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 2px; border-bottom-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-color: rgb(94, 94, 94); border-right-color: rgb(94, 94, 94); border-top-color: rgb(94, 94, 94); border-bottom-color: rgb(94, 94, 94);">
+        <ui:GroupBox style="flex-direction: row; width: 100%; height: auto; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 6px; padding-right: 6px; padding-top: 6px; padding-bottom: 6px;">
+            <ui:GroupBox style="width: 25%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                <ui:Label text="Name" display-tooltip-when-elided="true" class="BorderDown1Px" style="-unity-text-align: upper-center; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 1px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+                <ui:Label text="Idle" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                <ui:Label text="Movement" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                <ui:Label text="Attack" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                <ui:Label text="OnHit" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                <ui:Label text="OnDeath" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                <ui:Label text="Special" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                <ui:VisualElement name="PlayerLabels">
+                    <ui:VisualElement style="border-left-width: 0; border-right-width: 0; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128); height: 97px;">
+                        <ui:Label text="Push Idle" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                        <ui:Label text="Pull Idle" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                        <ui:Label text="Push Move" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                        <ui:Label text="Pull Move" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 1px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);">
+                        <ui:Label text="Hold Idle" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                        <ui:Label text="Hold Move" display-tooltip-when-elided="true" class="Field22LabelPxSize" style="-unity-text-align: middle-center;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:GroupBox>
+            <ui:GroupBox style="width: 25%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; border-left-width: 1px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);">
+                <ui:Label text="Count" display-tooltip-when-elided="true" class="BorderDown1Px" style="-unity-text-align: upper-center;" />
+                <uie:IntegerField value="42" binding-path="idleAnimationsCount" class="AnimationIntegerField Field22PxSize" />
+                <uie:IntegerField value="42" binding-path="movingAnimationsCount" class="AnimationIntegerField Field22PxSize" />
+                <uie:IntegerField value="42" binding-path="attacksAnimationsCount" class="AnimationIntegerField Field22PxSize" />
+                <uie:IntegerField value="42" binding-path="onHitAnimationsCount" class="AnimationIntegerField Field22PxSize" />
+                <uie:IntegerField value="42" binding-path="onDeathAnimationsCount" class="AnimationIntegerField Field22PxSize" />
+                <uie:IntegerField value="42" binding-path="specialAnimationsCount" class="AnimationIntegerField Field22PxSize" />
+                <ui:VisualElement name="PlayerCount">
+                    <ui:VisualElement style="height: 96px; justify-content: center; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);">
+                        <uie:IntegerField value="42" binding-path="playerPushPullAnimationsCount" class="AnimationIntegerField Field22PxSize" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="height: 48px; justify-content: center; border-top-width: 0; border-bottom-width: 1px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);">
+                        <uie:IntegerField value="42" binding-path="playerHoldingAnimationsCount" class="AnimationIntegerField Field22PxSize" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:GroupBox>
+            <ui:GroupBox style="width: 50%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; border-left-width: 1px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);">
+                <ui:Label text="Texture" display-tooltip-when-elided="true" class="BorderDown1Px" style="justify-content: flex-start; align-items: center; -unity-text-align: upper-center;" />
+                <uie:ObjectField binding-path="idleTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                <uie:ObjectField binding-path="movementTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                <uie:ObjectField binding-path="attacksTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                <uie:ObjectField binding-path="onHitTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                <uie:ObjectField binding-path="onDeathTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                <uie:ObjectField binding-path="specialTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                <ui:VisualElement name="PlayerTextures">
+                    <ui:VisualElement style="border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);">
+                        <uie:ObjectField binding-path="playerPushIdleTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                        <uie:ObjectField binding-path="playerPullIdleTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                        <uie:ObjectField binding-path="playerPushMovingTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                        <uie:ObjectField binding-path="playerPullMovingTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px;">
+                        <uie:ObjectField binding-path="playerHoldingIdleTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                        <uie:ObjectField binding-path="playerHoldingMovingTexture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" class="AnimationObjectField Field22PxSize" style="-unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:GroupBox>
+        </ui:GroupBox>
+    </ui:GroupBox>
+    <ui:GroupBox>
+        <ui:Button text="Auto Sprite Idle" display-tooltip-when-elided="true" name="autoSpriteIdle" style="display: none;" />
+        <ui:Button text="Auto Sprite Movement" display-tooltip-when-elided="true" name="autoSpriteMovement" style="display: none;" />
+        <ui:Button text="Auto Sprite Attack" display-tooltip-when-elided="true" name="autoSpriteAttack" style="display: none;" />
+        <ui:Button text="Auto Sprite On Hit" display-tooltip-when-elided="true" name="autoSpriteOnHit" style="display: none;" />
+        <ui:Button text="Auto Sprite On Death" display-tooltip-when-elided="true" name="autoSpriteOnDeath" style="display: none;" />
+        <ui:Button text="Auto Sprite Special" display-tooltip-when-elided="true" name="autoSpriteSpecial" style="display: none;" />
+        <ui:Button text="Auto Sprite All" display-tooltip-when-elided="true" name="autoSpriteAll" />
+        <ui:VisualElement name="PlayerButtons" style="flex-grow: 0; flex-shrink: 0; display: flex;">
+            <ui:Button text="Auto Sprite Push/Pull" display-tooltip-when-elided="true" name="autoSpritePushPull" />
+            <ui:Button text="Auto Sprite Holding" display-tooltip-when-elided="true" name="autoSpriteHold" />
+        </ui:VisualElement>
+    </ui:GroupBox>
+    <ui:Toggle label="Show Events" name="ShowEvents" view-data-key="ShowEventsKey" />
+    <ui:Foldout text="Animation List" view-data-key="AnimListKey" name="AnimList" value="true">
+        <ui:Foldout text="Idle Animations" name="IdleAnim" view-data-key="IdleAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+        <ui:Foldout text="Move Animations" name="MoveAnim" view-data-key="MoveAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+        <ui:Foldout text="Attack Animations" name="AttackAnim" view-data-key="AttackAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+        <ui:Foldout text="OnHit Animations" name="OnHitAnim" view-data-key="OnHitAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+        <ui:Foldout text="OnDeath Animations" name="OnDeathAnim" view-data-key="OnDeathAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+        <ui:Foldout text="Special Animations" name="SpecialAnim" view-data-key="SpecialAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+        <ui:VisualElement name="PlayerAnims" style="display: flex;">
+            <ui:Foldout text="PullIdle Animations" name="PullIdleAnim" view-data-key="PullIdleAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+            <ui:Foldout text="PushMove Animations" name="PushMoveAnim" view-data-key="PushMoveAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+            <ui:Foldout text="PullMove Animations" name="PullMoveAnim" view-data-key="PullMoveAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+            <ui:Foldout text="PushIdle Animations" name="PushIdleAnim" view-data-key="PushIdleAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+            <ui:Foldout text="HoldIdle Animations" name="HoldIdleAnim" view-data-key="HoldIdleAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+            <ui:Foldout text="HoldMove Animations" name="HoldMoveAnim" view-data-key="HoldMoveAnimKey" value="false" style="flex-wrap: nowrap; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128);" />
+        </ui:VisualElement>
+    </ui:Foldout>
+    <ui:GroupBox>
+        <ui:Button text="Fill Times" display-tooltip-when-elided="true" name="fillTimes" />
+    </ui:GroupBox>
+</ui:UXML>

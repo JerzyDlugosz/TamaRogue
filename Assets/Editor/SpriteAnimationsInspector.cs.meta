@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 199f5da430933804c989045a600d81de
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_InspectorXML: {fileID: 9197481963319205126, guid: f713bbc3f0829d44daf20f1bb5f6ca56, type: 3}
+  - spriteTemplate: {fileID: 9197481963319205126, guid: 497f6053febca344daaa8c8dfb608e33, type: 3}
+  - animationLabel: {fileID: 9197481963319205126, guid: 7d443067867202c4791de6731de47513, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
