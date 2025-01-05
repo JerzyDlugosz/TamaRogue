@@ -17,8 +17,18 @@ public class FoodBar : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public Image expectedValueImage;
     public void OnPointerEnter(PointerEventData eventData)
     {
+        ShowInfo();
+    }
+
+    public void ShowInfo()
+    {
         writtenValue.gameObject.SetActive(true);
         writtenValue.text = $"{actualValue.ToString("F2")}/{maxValue.ToString("F2")}";
+    }
+
+    public void HideInfo()
+    {
+        writtenValue.gameObject.SetActive(false);
     }
 
     public void SetActualValue(float value)
@@ -56,11 +66,11 @@ public class FoodBar : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        writtenValue.gameObject.SetActive(false);
+        HideInfo();
     }
 
     private void OnDisable()
     {
-        writtenValue.gameObject.SetActive(false);
+        HideInfo();
     }
 }

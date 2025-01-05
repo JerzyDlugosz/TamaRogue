@@ -11,15 +11,11 @@ public class ExplanationButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public TextMeshProUGUI discardCount;
     public GameObject evoCount;
     public TextMeshProUGUI evoText;
+    public List<FoodBar> foodBars;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        infoPanel.SetActive(true);
-        evoCount.SetActive(true);
-        playCount.text = $"<sprite=2 tint>{GameManagerScript.instance.player.remainingPlays}";
-        discardCount.text = $"<sprite=1 tint>{GameManagerScript.instance.player.remainingDiscards}";
-        evoText.text = $"{GameManagerScript.instance.player.currentEvoStep}/{GameManagerScript.instance.player.maxEvoSteps[GameManagerScript.instance.player.currentEvolutionNumber]} Evo";
-        ShowItemValues();
+        ShowInfo();
     }
 
     public void ShowItemValues()
@@ -30,9 +26,33 @@ public class ExplanationButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
         {
             FIC.instantiatedFoodObjects[i].ShowItemData(player.playedFoodItems[i].foodData.foodValues);
         }
+        foreach (var item in foodBars)
+        {
+            item.ShowInfo();
+        }
+    }
+
+    public void ShowInfo()
+    {
+        infoPanel.SetActive(true);
+        evoCount.SetActive(true);
+        playCount.text = $"<sprite=2 tint>{GameManagerScript.instance.player.remainingPlays}";
+        discardCount.text = $"<sprite=1 tint>{GameManagerScript.instance.player.remainingDiscards}";
+        evoText.text = $"{GameManagerScript.instance.player.currentEvoStep}/{GameManagerScript.instance.player.maxEvoSteps[GameManagerScript.instance.player.currentEvolutionNumber]} Evo";
+        ShowItemValues();
     }
 
     public void OnPointerExit(PointerEventData eventData)
+    {
+        HideInfo();
+    }
+
+    private void OnDisable()
+    {
+        HideInfo();
+    }
+
+    public void HideInfo()
     {
         infoPanel.SetActive(false);
         evoCount.SetActive(false);
@@ -40,15 +60,9 @@ public class ExplanationButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
         {
             item.HideItemData();
         }
-    }
-
-    private void OnDisable()
-    {
-        infoPanel.SetActive(false);
-        evoCount.SetActive(false);
-        foreach (var item in GameManagerScript.instance.fooditemsController.instantiatedFoodObjects)
+        foreach(var item in foodBars)
         {
-            item.HideItemData();
+            item.HideInfo();
         }
     }
 }

@@ -13,6 +13,8 @@ public class OptionsMenu : MonoBehaviour
     [SerializeField]
     private Slider effectsVolumeSlider;
 
+    public AudioClip testSoundEffect;
+
     private void Start()
     {
         SetUIValues();
@@ -59,5 +61,6 @@ public class OptionsMenu : MonoBehaviour
     {
         GameStateManager.instance.audioManager.effectsVolume = slider.value;
         PlayerPrefs.SetFloat("EffectsVolume", slider.value);
+        GameStateManager.instance.audioManager.PlaySoundEffectWait(testSoundEffect);
     }
 }

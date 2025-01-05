@@ -81,5 +81,7 @@ public class Upgrade
     public string upgradeTMPText;
 
     public bool isShown = false;
+
+    public int upgradeRarity = 0;
 }
 

@@ -393,11 +393,13 @@ MonoBehaviour:
   musicAudioSource: {fileID: 2075616897}
   effectsAudioSoruce: {fileID: 2075616896}
   titleAudio:
-  - {fileID: 8300000, guid: 22c9b587fd50e424cb79d6764550c451, type: 3}
+  - {fileID: 8300000, guid: 30830702c1b1b0f4d86095a1a125e348, type: 3}
   gameAudio:
-  - {fileID: 8300000, guid: a8e4936d1cb713041857661a960adc69, type: 3}
+  - {fileID: 8300000, guid: 09d0423d86c409942882fd4afba7ed36, type: 3}
   shopAudio:
-  - {fileID: 8300000, guid: 4d3413f2c11e07840a96ec10f2b51fc5, type: 3}
+  - {fileID: 8300000, guid: 9cb4a58a0f48a744fa67ee8481a4c507, type: 3}
+  deathAudio:
+  - {fileID: 8300000, guid: 683bb87b70995a44993eac69de743e70, type: 3}
   mainVolume: 0
   musicVolume: 0
   effectsVolume: 0

@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onSelectAudioClip: {fileID: 0}
-  onClickAudioClip: {fileID: 0}
+  onClickAudioClip: {fileID: 8300000, guid: 33a8b22eac36ab449a5d6f7641577550, type: 3}
 --- !u!114 &239389647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1584,7 +1584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onSelectAudioClip: {fileID: 0}
-  onClickAudioClip: {fileID: 0}
+  onClickAudioClip: {fileID: 8300000, guid: 33a8b22eac36ab449a5d6f7641577550, type: 3}
 --- !u!114 &1001175358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,7 +1809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onSelectAudioClip: {fileID: 0}
-  onClickAudioClip: {fileID: 0}
+  onClickAudioClip: {fileID: 8300000, guid: 33a8b22eac36ab449a5d6f7641577550, type: 3}
 --- !u!114 &1332757428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2740,6 +2740,7 @@ MonoBehaviour:
   mainVolumeSlider: {fileID: 1377852752}
   musicVolumeSlider: {fileID: 750363524}
   effectsVolumeSlider: {fileID: 282222578}
+  testSoundEffect: {fileID: 8300000, guid: 33a8b22eac36ab449a5d6f7641577550, type: 3}
 --- !u!114 &1690776408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3156,7 +3157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onSelectAudioClip: {fileID: 0}
-  onClickAudioClip: {fileID: 0}
+  onClickAudioClip: {fileID: 8300000, guid: 33a8b22eac36ab449a5d6f7641577550, type: 3}
 --- !u!114 &2006992430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3888,7 +3889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onSelectAudioClip: {fileID: 0}
-  onClickAudioClip: {fileID: 0}
+  onClickAudioClip: {fileID: 8300000, guid: 33a8b22eac36ab449a5d6f7641577550, type: 3}
 --- !u!1 &5740262987600058292
 GameObject:
   m_ObjectHideFlags: 0
@@ -4036,7 +4037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onSelectAudioClip: {fileID: 0}
-  onClickAudioClip: {fileID: 0}
+  onClickAudioClip: {fileID: 8300000, guid: 33a8b22eac36ab449a5d6f7641577550, type: 3}
 --- !u!1 &5740262989018454770
 GameObject:
   m_ObjectHideFlags: 0
@@ -4184,4 +4185,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onSelectAudioClip: {fileID: 0}
-  onClickAudioClip: {fileID: 0}
+  onClickAudioClip: {fileID: 8300000, guid: 33a8b22eac36ab449a5d6f7641577550, type: 3}

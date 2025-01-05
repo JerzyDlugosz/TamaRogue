@@ -18,6 +18,8 @@ public class AudioManager : MonoBehaviour
     private List<AudioClip> gameAudio;
     [SerializeField]
     private List<AudioClip> shopAudio;
+    [SerializeField]
+    private List<AudioClip> deathAudio;
 
     [Range(0, 1)]
     public float mainVolume;
@@ -48,6 +50,9 @@ public class AudioManager : MonoBehaviour
                 break;
             case Zone.Shop:
                 PlayAudioFromList(shopAudio);
+                break;
+            case Zone.Death:
+                PlayAudioFromList(deathAudio);
                 break;
             default:
                 break;
@@ -108,6 +113,20 @@ public class AudioManager : MonoBehaviour
         effectsAudioSoruce.PlayOneShot(audioClip, effectsVolume);
     }
 
+    public void PlaySoundEffectWait(AudioClip audioClip)
+    {
+        if (audioClip == null)
+        {
+            Debug.LogWarning("No audio clip to play");
+            return;
+        }
+        if(!effectsAudioSoruce.isPlaying)
+        {
+            Debug.Log($"Playing: {audioClip.name}");
+            effectsAudioSoruce.PlayOneShot(audioClip, effectsVolume);
+        }
+    }
+
     private void Update()
     {
         AudioListener.volume = mainVolume;
@@ -120,5 +139,6 @@ public enum Zone
 {
     TitleScreen = 1,
     Game = 2,
-    Shop = 3
+    Shop = 3,
+    Death = 4
 }

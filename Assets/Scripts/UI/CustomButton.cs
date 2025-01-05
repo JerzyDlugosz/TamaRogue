@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class CustomButton : MonoBehaviour, ISelectHandler
+public class CustomButton : MonoBehaviour, ISelectHandler, IPointerClickHandler
 {
     /// <summary>
     /// audio clip to play when user selects the button (through navigation)
@@ -48,5 +48,10 @@ public class CustomButton : MonoBehaviour, ISelectHandler
     public void SaveGame()
     {
  
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        GameStateManager.instance.audioManager.PlaySoundEffect(onClickAudioClip);
     }
 }

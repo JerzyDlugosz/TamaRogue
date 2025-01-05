@@ -34,6 +34,9 @@ public class GameManagerScript : MonoBehaviour
 
     public int roundNumber = 0;
 
+    public AudioClip eatingSound;
+    public AudioClip winSound;
+
     private void OnEnable()
     {
         instance = this;
@@ -232,7 +235,7 @@ public class GameManagerScript : MonoBehaviour
             Roll();
 
         //petController.OnFeed(() => OnFeedEnd());
-
+        GameStateManager.instance.audioManager.PlaySoundEffect(eatingSound);
         petController.OnFeed();
         Invoke(nameof(OnFeedEnd), 1f);
     }
@@ -270,6 +273,7 @@ public class GameManagerScript : MonoBehaviour
 
         if(areFoodValuesReached)
         {
+            GameStateManager.instance.audioManager.PlaySoundEffect(winSound);
             petController.OnWin(() => ChangeSceneToShop());
             buttonsController.SetAllButtonsState(false);
         }
@@ -300,6 +304,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void LoseGame()
     {
+        GameStateManager.instance.audioManager.OnMapChange((Zone)4);
         gameScene.SetActive(false);
         loseScene.SetActive(true);
         var rect = loseScene.GetComponent<RectTransform>();
@@ -365,6 +370,7 @@ public class GameManagerScript : MonoBehaviour
         else
         {
             petController.SetupEvoFrames();
+            player.UpgradePet();
             previousPosition = petController.gameObject.transform.position;
             player.currentEvolutionNumber++;
             player.currentEvoStep = 0;

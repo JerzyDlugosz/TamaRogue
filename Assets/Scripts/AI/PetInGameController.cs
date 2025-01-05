@@ -160,8 +160,8 @@ public class PetInGameController : MonoBehaviour
     private void IncreaseFoodRequirement()
     {
         var divideValue = MathF.Max(4 - (GameManagerScript.instance.roundNumber / 4), 1);
-        float maxValue = 0.7f + (0.2f * ((GameManagerScript.instance.roundNumber / divideValue) + 1));
-        float minValue = 0.5f + (0.15f * ((GameManagerScript.instance.roundNumber / divideValue) + 1));
+        float maxValue = 0.5f + (0.2f * GameManagerScript.instance.roundNumber / divideValue);
+        float minValue = 0.5f + (0.1f * GameManagerScript.instance.roundNumber / divideValue);
 
         Debug.Log($"{minValue} / {maxValue}");
 
