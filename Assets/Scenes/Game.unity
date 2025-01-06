@@ -419,6 +419,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39114961}
   m_CullTransparentMesh: 1
+--- !u!1 &42548197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42548198}
+  - component: {fileID: 42548199}
+  m_Layer: 5
+  m_Name: Mask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &42548198
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42548197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1631445251}
+  - {fileID: 1350964584}
+  - {fileID: 213639016}
+  - {fileID: 484139147}
+  - {fileID: 1093967120}
+  - {fileID: 924608940}
+  m_Father: {fileID: 766403315}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &42548199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42548197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &71262303
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,12 +934,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213639015}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 766403315}
+  m_Father: {fileID: 42548198}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -890,6 +947,112 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &232783110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232783111}
+  - component: {fileID: 232783114}
+  - component: {fileID: 232783113}
+  - component: {fileID: 232783112}
+  m_Layer: 5
+  m_Name: UpgHighlight1Arrow (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &232783111
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232783110}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1655225915}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -8, y: -16}
+  m_SizeDelta: {x: 16, y: 16}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &232783112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232783110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414ea3cb9514d4048a1a0450de74b394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onOneShotFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  onLoopFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  animationSprites: []
+  animationSpeed: 1
+  internalAnimationUpdate: 1
+  oneShot: 0
+  instantiateOnStart: 0
+  baseSprites:
+  - sprite: {fileID: -1018637127, guid: 4575287ade4d8c948b2f236ea766f6e6, type: 3}
+    timeOfSprite: 1
+    additionalEvent:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &232783113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232783110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1018637127, guid: 4575287ade4d8c948b2f236ea766f6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &232783114
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232783110}
+  m_CullTransparentMesh: 1
 --- !u!1 &262421906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,19 +1766,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484139146}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1951018842}
   - {fileID: 799494697}
-  m_Father: {fileID: 766403315}
+  m_Father: {fileID: 42548198}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 128}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 64}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &515451169
@@ -1770,7 +1933,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.30257574, g: 0.19670703, b: 0.4056604, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1787,7 +1950,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 64
+  orthographic size: 128
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2195,7 +2358,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 0
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2307,12 +2470,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1631445251}
-  - {fileID: 1350964584}
-  - {fileID: 213639016}
-  - {fileID: 484139147}
-  - {fileID: 1093967120}
-  - {fileID: 924608940}
+  - {fileID: 42548198}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2352,7 +2510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 1
-  m_ScaleFactor: 1
+  m_ScaleFactor: 4
   m_ReferenceResolution: {x: 128, y: 128}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -2810,19 +2968,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924608939}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1411534224}
   - {fileID: 2102125534}
-  m_Father: {fileID: 766403315}
+  m_Father: {fileID: 42548198}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 128}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 64}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &975235423
@@ -3108,7 +3266,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 0
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3329,9 +3487,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 2154a7813fc7cf54caec765138b5307f, type: 2}
     - {fileID: 11400000, guid: 0b5b2ee64e7866e4282ea3a003cf211e, type: 2}
     - {fileID: 11400000, guid: 4f03cd733f6b32f4b9e2e677e39b23e5, type: 2}
-    - {fileID: 11400000, guid: fad3aa21c0a58324c89703f6bf88e778, type: 2}
     - {fileID: 11400000, guid: ebe040aaea3a27243ac566f3d4866442, type: 2}
     - {fileID: 11400000, guid: 27ad5633b3cd1bb41a9f625f69bd1d7a, type: 2}
+    - {fileID: 11400000, guid: fad3aa21c0a58324c89703f6bf88e778, type: 2}
+    - {fileID: 11400000, guid: e0ed7f92bed101e4791c61571d49070e, type: 2}
+    - {fileID: 11400000, guid: 1d72cac43df99034fa6d8c91e5e78219, type: 2}
   - deckID: MultDeck1
     deckName: Muliplier Deck 1
     maxDiscards: 3
@@ -3378,6 +3538,34 @@ MonoBehaviour:
     - {fileID: 11400000, guid: fad3aa21c0a58324c89703f6bf88e778, type: 2}
     - {fileID: 11400000, guid: ebe040aaea3a27243ac566f3d4866442, type: 2}
     - {fileID: 11400000, guid: 27ad5633b3cd1bb41a9f625f69bd1d7a, type: 2}
+  - deckID: MultDeck2
+    deckName: Muliplier Deck 2
+    maxDiscards: 6
+    maxPlays: 6
+    maxFoodOnScreen: 6
+    startingItems:
+    - {fileID: 11400000, guid: 4f03cd733f6b32f4b9e2e677e39b23e5, type: 2}
+    - {fileID: 11400000, guid: 0b5b2ee64e7866e4282ea3a003cf211e, type: 2}
+    - {fileID: 11400000, guid: 3f7d85f101d91814ca9a692a5b8cdda6, type: 2}
+    - {fileID: 11400000, guid: 2154a7813fc7cf54caec765138b5307f, type: 2}
+    - {fileID: 11400000, guid: 27ad5633b3cd1bb41a9f625f69bd1d7a, type: 2}
+    - {fileID: 11400000, guid: ebe040aaea3a27243ac566f3d4866442, type: 2}
+    - {fileID: 11400000, guid: fad3aa21c0a58324c89703f6bf88e778, type: 2}
+    - {fileID: 11400000, guid: e0ed7f92bed101e4791c61571d49070e, type: 2}
+    - {fileID: 11400000, guid: ebe040aaea3a27243ac566f3d4866442, type: 2}
+    - {fileID: 11400000, guid: ebe040aaea3a27243ac566f3d4866442, type: 2}
+    - {fileID: 11400000, guid: 1d72cac43df99034fa6d8c91e5e78219, type: 2}
+    - {fileID: 11400000, guid: 1d72cac43df99034fa6d8c91e5e78219, type: 2}
+    availableItems:
+    - {fileID: 11400000, guid: 3f7d85f101d91814ca9a692a5b8cdda6, type: 2}
+    - {fileID: 11400000, guid: 2154a7813fc7cf54caec765138b5307f, type: 2}
+    - {fileID: 11400000, guid: 0b5b2ee64e7866e4282ea3a003cf211e, type: 2}
+    - {fileID: 11400000, guid: 4f03cd733f6b32f4b9e2e677e39b23e5, type: 2}
+    - {fileID: 11400000, guid: fad3aa21c0a58324c89703f6bf88e778, type: 2}
+    - {fileID: 11400000, guid: ebe040aaea3a27243ac566f3d4866442, type: 2}
+    - {fileID: 11400000, guid: 27ad5633b3cd1bb41a9f625f69bd1d7a, type: 2}
+    - {fileID: 11400000, guid: e0ed7f92bed101e4791c61571d49070e, type: 2}
+    - {fileID: 11400000, guid: 1d72cac43df99034fa6d8c91e5e78219, type: 2}
   currentDeck: 0
 --- !u!114 &1054415714
 MonoBehaviour:
@@ -3394,7 +3582,7 @@ MonoBehaviour:
   upgrades:
   - upgradeID: 0
     availableInDecks: 00000000010000000200000003000000
-    rollAmmount: 4
+    rollAmmount: 5
     upgradeEvent:
       m_PersistentCalls:
         m_Calls:
@@ -3439,12 +3627,12 @@ MonoBehaviour:
     isSingle: 0
     type: 3
     upgradeValues:
-    - 0.5
+    - 0.05
     - 0
     - 0
     upgradeColor: {r: 0.80392164, g: 0.25882354, b: 0.25882354, a: 1}
     upgradeSprite: {fileID: 1195970303, guid: cd0ff9be3ae88604ca5c27abd945b3a1, type: 3}
-    upgradeTMPText: +0.5
+    upgradeTMPText: +0.05
     isShown: 0
     upgradeRarity: 1
   - upgradeID: 2
@@ -3478,7 +3666,7 @@ MonoBehaviour:
     upgradeRarity: 1
   - upgradeID: 3
     availableInDecks: 00000000010000000200000003000000
-    rollAmmount: 3
+    rollAmmount: 2
     upgradeEvent:
       m_PersistentCalls:
         m_Calls:
@@ -3536,7 +3724,7 @@ MonoBehaviour:
     upgradeRarity: 2
   - upgradeID: 5
     availableInDecks: 00000000010000000200000003000000
-    rollAmmount: 4
+    rollAmmount: 5
     upgradeEvent:
       m_PersistentCalls:
         m_Calls:
@@ -3562,7 +3750,7 @@ MonoBehaviour:
     upgradeRarity: 0
   - upgradeID: 6
     availableInDecks: 00000000010000000200000003000000
-    rollAmmount: 4
+    rollAmmount: 5
     upgradeEvent:
       m_PersistentCalls:
         m_Calls:
@@ -3588,7 +3776,7 @@ MonoBehaviour:
     upgradeRarity: 0
   - upgradeID: 7
     availableInDecks: 00000000010000000200000003000000
-    rollAmmount: 3
+    rollAmmount: 4
     upgradeEvent:
       m_PersistentCalls:
         m_Calls:
@@ -3614,7 +3802,7 @@ MonoBehaviour:
     upgradeRarity: 0
   - upgradeID: 8
     availableInDecks: 00000000010000000200000003000000
-    rollAmmount: 3
+    rollAmmount: 4
     upgradeEvent:
       m_PersistentCalls:
         m_Calls:
@@ -3640,7 +3828,7 @@ MonoBehaviour:
     upgradeRarity: 0
   - upgradeID: 9
     availableInDecks: 00000000010000000200000003000000
-    rollAmmount: 3
+    rollAmmount: 4
     upgradeEvent:
       m_PersistentCalls:
         m_Calls:
@@ -3715,11 +3903,11 @@ MonoBehaviour:
     type: 3
     upgradeValues:
     - 0
-    - 0.5
+    - 0.05
     - 0
     upgradeColor: {r: 0.5882353, g: 0.69803923, b: 0.3372549, a: 1}
     upgradeSprite: {fileID: -1458057377, guid: cd0ff9be3ae88604ca5c27abd945b3a1, type: 3}
-    upgradeTMPText: <sprite=0 tint> +0.5
+    upgradeTMPText: <sprite=0 tint> +0.05
     isShown: 0
     upgradeRarity: 1
   - upgradeID: 12
@@ -3744,11 +3932,404 @@ MonoBehaviour:
     type: 3
     upgradeValues:
     - 0
-    - 0.5
+    - 0.05
     - 0
     upgradeColor: {r: 0.35686275, g: 0.43137258, b: 0.882353, a: 1}
     upgradeSprite: {fileID: -1649476736, guid: cd0ff9be3ae88604ca5c27abd945b3a1, type: 3}
-    upgradeTMPText: <sprite=0 tint> +0.5
+    upgradeTMPText: <sprite=0 tint> +0.05
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 13
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 3
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Spice1
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 1
+    type: 0
+    upgradeValues: []
+    upgradeColor: {r: 0, g: 0, b: 0, a: 1}
+    upgradeSprite: {fileID: -697119592, guid: 4068e9d190e6698458955d4ae607ba74, type: 3}
+    upgradeTMPText: 
+    isShown: 0
+    upgradeRarity: 0
+  - upgradeID: 14
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 1
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Blue1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Blue1
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 0
+    type: 0
+    upgradeValues: []
+    upgradeColor: {r: 0, g: 0, b: 0, a: 1}
+    upgradeSprite: {fileID: 1175108493, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
+    upgradeTMPText: +2
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 15
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 1
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Red1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Red1
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 0
+    type: 0
+    upgradeValues: []
+    upgradeColor: {r: 0, g: 0, b: 0, a: 1}
+    upgradeSprite: {fileID: -178727161, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
+    upgradeTMPText: +2
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 16
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 1
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Green1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Green1
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 0
+    type: 0
+    upgradeValues: []
+    upgradeColor: {r: 0, g: 0, b: 0, a: 1}
+    upgradeSprite: {fileID: 493266972, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
+    upgradeTMPText: +2
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 17
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 1
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Cyan1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Cyan1
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 0
+    type: 0
+    upgradeValues: []
+    upgradeColor: {r: 0, g: 0, b: 0, a: 1}
+    upgradeSprite: {fileID: 1683201022, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
+    upgradeTMPText: +2
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 18
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 1
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Violet1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Violet1
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 0
+    type: 0
+    upgradeValues: []
+    upgradeColor: {r: 0, g: 0, b: 0, a: 1}
+    upgradeSprite: {fileID: -290914720, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
+    upgradeTMPText: +2
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 19
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 1
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Yellow1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Yellow1
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 0
+    type: 0
+    upgradeValues: []
+    upgradeColor: {r: 0, g: 0, b: 0, a: 1}
+    upgradeSprite: {fileID: 1000073055, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
+    upgradeTMPText: +2
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 20
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 1
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Spice2
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 1
+    type: 0
+    upgradeValues: []
+    upgradeColor: {r: 0, g: 0, b: 0, a: 1}
+    upgradeSprite: {fileID: 1512168881, guid: 4068e9d190e6698458955d4ae607ba74, type: 3}
+    upgradeTMPText: 0
+    isShown: 0
+    upgradeRarity: 2
+  - upgradeID: 21
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 3
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: AddFoodToDeck
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Cheese1
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 1
+    type: 0
+    upgradeValues: []
+    upgradeColor: {r: 0, g: 0, b: 0, a: 1}
+    upgradeSprite: {fileID: -311931212, guid: 4068e9d190e6698458955d4ae607ba74, type: 3}
+    upgradeTMPText: 0
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 22
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 2
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: UpgradeCurrentItems
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 22
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 0
+    type: 1
+    upgradeValues:
+    - 2
+    - 1
+    - 1
+    upgradeColor: {r: 0.80392164, g: 0.25882354, b: 0.25882354, a: 1}
+    upgradeSprite: {fileID: 1195970303, guid: cd0ff9be3ae88604ca5c27abd945b3a1, type: 3}
+    upgradeTMPText: <sprite=0 tint> x2
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 23
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 2
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: UpgradeCurrentItems
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 23
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 0
+    type: 1
+    upgradeValues:
+    - 1
+    - 2
+    - 1
+    upgradeColor: {r: 0.5882353, g: 0.69803923, b: 0.3372549, a: 1}
+    upgradeSprite: {fileID: -1458057377, guid: cd0ff9be3ae88604ca5c27abd945b3a1, type: 3}
+    upgradeTMPText: <sprite=0 tint> x2
+    isShown: 0
+    upgradeRarity: 1
+  - upgradeID: 24
+    availableInDecks: 00000000010000000200000003000000
+    rollAmmount: 2
+    upgradeEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1054415714}
+          m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+          m_MethodName: UpgradeCurrentItems
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 24
+            m_BoolArgument: 0
+          m_CallState: 2
+    isSingle: 0
+    type: 1
+    upgradeValues:
+    - 1
+    - 1
+    - 2
+    upgradeColor: {r: 0.35686275, g: 0.43137258, b: 0.882353, a: 1}
+    upgradeSprite: {fileID: -1649476736, guid: cd0ff9be3ae88604ca5c27abd945b3a1, type: 3}
+    upgradeTMPText: <sprite=0 tint> x2
     isShown: 0
     upgradeRarity: 1
 --- !u!1 &1083219491
@@ -3850,18 +4431,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093967119}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1586522015}
-  m_Father: {fileID: 766403315}
+  m_Father: {fileID: 42548198}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 128}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 64}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &1101345894
@@ -4337,18 +4918,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115797764}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1655225915}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -8, y: -80}
-  m_SizeDelta: {x: 16, y: 16}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -32}
+  m_SizeDelta: {x: 98, y: 34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1115797766
 MonoBehaviour:
@@ -4399,7 +4980,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1018637127, guid: 4575287ade4d8c948b2f236ea766f6e6, type: 3}
+  m_Sprite: {fileID: 416726927, guid: e48f65715a7eeaf438f45e968c5268c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4555,18 +5136,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157476207}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1655225915}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -8, y: -16}
-  m_SizeDelta: {x: 16, y: 16}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 32}
+  m_SizeDelta: {x: 98, y: 34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1157476209
 MonoBehaviour:
@@ -4592,7 +5173,12 @@ MonoBehaviour:
   oneShot: 0
   instantiateOnStart: 0
   baseSprites:
-  - sprite: {fileID: -1018637127, guid: 4575287ade4d8c948b2f236ea766f6e6, type: 3}
+  - sprite: {fileID: 2047226687, guid: e48f65715a7eeaf438f45e968c5268c2, type: 3}
+    timeOfSprite: 1
+    additionalEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - sprite: {fileID: 416726927, guid: e48f65715a7eeaf438f45e968c5268c2, type: 3}
     timeOfSprite: 1
     additionalEvent:
       m_PersistentCalls:
@@ -4617,7 +5203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1018637127, guid: 4575287ade4d8c948b2f236ea766f6e6, type: 3}
+  m_Sprite: {fileID: 416726927, guid: e48f65715a7eeaf438f45e968c5268c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5438,18 +6024,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336680474}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1655225915}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -8, y: -48}
-  m_SizeDelta: {x: 16, y: 16}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 98, y: 34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336680476
 MonoBehaviour:
@@ -5500,7 +6086,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1018637127, guid: 4575287ade4d8c948b2f236ea766f6e6, type: 3}
+  m_Sprite: {fileID: 416726927, guid: e48f65715a7eeaf438f45e968c5268c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5590,19 +6176,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350964583}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1655225915}
   - {fileID: 515451170}
-  m_Father: {fileID: 766403315}
+  m_Father: {fileID: 42548198}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 128}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 64}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1350964585
@@ -5633,12 +6219,12 @@ MonoBehaviour:
   cancel: {fileID: 35480647}
   change: {fileID: 975235425}
   highlightSprites:
-  - sprite: {fileID: 834866693, guid: 4575287ade4d8c948b2f236ea766f6e6, type: 3}
+  - sprite: {fileID: 2047226687, guid: e48f65715a7eeaf438f45e968c5268c2, type: 3}
     timeOfSprite: 1
     additionalEvent:
       m_PersistentCalls:
         m_Calls: []
-  - sprite: {fileID: -1018637127, guid: 4575287ade4d8c948b2f236ea766f6e6, type: 3}
+  - sprite: {fileID: 416726927, guid: e48f65715a7eeaf438f45e968c5268c2, type: 3}
     timeOfSprite: 1
     additionalEvent:
       m_PersistentCalls:
@@ -6956,6 +7542,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593772465}
   m_CullTransparentMesh: 1
+--- !u!1 &1625830069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1625830072}
+  - component: {fileID: 1625830073}
+  m_Layer: 0
+  m_Name: PlayerInputs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1625830072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625830069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 314.80035, y: 75.96687, z: 2719.9636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625830073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625830069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444c4298078ac7245ab024ca39f5c108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 0}
 --- !u!1 &1631445250
 GameObject:
   m_ObjectHideFlags: 0
@@ -6991,13 +7622,13 @@ RectTransform:
   - {fileID: 1653205043}
   - {fileID: 416491742}
   - {fileID: 823254275}
-  m_Father: {fileID: 766403315}
+  m_Father: {fileID: 42548198}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1634626677
 GameObject:
@@ -7182,6 +7813,7 @@ RectTransform:
   - {fileID: 1249120951}
   - {fileID: 2003782144}
   - {fileID: 994693631}
+  - {fileID: 232783111}
   m_Father: {fileID: 1350964584}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7893,7 +8525,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 0
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8083,10 +8715,10 @@ RectTransform:
   m_Father: {fileID: 2058924477}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1815484651
 MonoBehaviour:

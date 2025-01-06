@@ -44,6 +44,15 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""ChangeResolution"",
+                    ""type"": ""Button"",
+                    ""id"": ""e0ffdd89-6ae3-4305-a54a-e9b0da8eea15"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -60,22 +69,11 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""73be0540-d6a3-40ac-a4ee-937fada2893f"",
-                    ""path"": ""<Pen>/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Point"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""00ac7d66-b7fe-42aa-9d4e-68805e2586ff"",
                     ""path"": ""<Touchscreen>/touch*/position"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Touch"",
                     ""action"": ""Point"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -93,34 +91,23 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c4e02c37-77cb-4396-8f9a-dea7196a4bdc"",
-                    ""path"": ""<Pen>/tip"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Click"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""c685b3c9-115d-4b14-96a6-efc3ed1ce8d8"",
                     ""path"": ""<Touchscreen>/touch*/press"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Touch"",
                     ""action"": ""Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ece75836-b4f7-4fdb-9d72-818864ef12fb"",
-                    ""path"": ""<XRController>/trigger"",
+                    ""id"": ""06dc0fce-cba6-48b1-9abf-2df8f7d2975f"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Click"",
+                    ""groups"": ""Mouse"",
+                    ""action"": ""ChangeResolution"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -136,6 +123,22 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""devicePath"": ""<Mouse>"",
                     ""isOptional"": false,
                     ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": true,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Touch"",
+            ""bindingGroup"": ""Touch"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Touchscreen>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
                 }
             ]
         }
@@ -145,6 +148,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         m_Game = asset.FindActionMap("Game", throwIfNotFound: true);
         m_Game_Click = m_Game.FindAction("Click", throwIfNotFound: true);
         m_Game_Point = m_Game.FindAction("Point", throwIfNotFound: true);
+        m_Game_ChangeResolution = m_Game.FindAction("ChangeResolution", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -206,12 +210,14 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     private IGameActions m_GameActionsCallbackInterface;
     private readonly InputAction m_Game_Click;
     private readonly InputAction m_Game_Point;
+    private readonly InputAction m_Game_ChangeResolution;
     public struct GameActions
     {
         private @InputActions m_Wrapper;
         public GameActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Click => m_Wrapper.m_Game_Click;
         public InputAction @Point => m_Wrapper.m_Game_Point;
+        public InputAction @ChangeResolution => m_Wrapper.m_Game_ChangeResolution;
         public InputActionMap Get() { return m_Wrapper.m_Game; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -227,6 +233,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Point.started -= m_Wrapper.m_GameActionsCallbackInterface.OnPoint;
                 @Point.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnPoint;
                 @Point.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnPoint;
+                @ChangeResolution.started -= m_Wrapper.m_GameActionsCallbackInterface.OnChangeResolution;
+                @ChangeResolution.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnChangeResolution;
+                @ChangeResolution.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnChangeResolution;
             }
             m_Wrapper.m_GameActionsCallbackInterface = instance;
             if (instance != null)
@@ -237,6 +246,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Point.started += instance.OnPoint;
                 @Point.performed += instance.OnPoint;
                 @Point.canceled += instance.OnPoint;
+                @ChangeResolution.started += instance.OnChangeResolution;
+                @ChangeResolution.performed += instance.OnChangeResolution;
+                @ChangeResolution.canceled += instance.OnChangeResolution;
             }
         }
     }
@@ -250,9 +262,19 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_MouseSchemeIndex];
         }
     }
+    private int m_TouchSchemeIndex = -1;
+    public InputControlScheme TouchScheme
+    {
+        get
+        {
+            if (m_TouchSchemeIndex == -1) m_TouchSchemeIndex = asset.FindControlSchemeIndex("Touch");
+            return asset.controlSchemes[m_TouchSchemeIndex];
+        }
+    }
     public interface IGameActions
     {
         void OnClick(InputAction.CallbackContext context);
         void OnPoint(InputAction.CallbackContext context);
+        void OnChangeResolution(InputAction.CallbackContext context);
     }
 }

@@ -10,27 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fba4194fcfe406c488b18f4dad45a7b1, type: 3}
-  m_Name: Spice1
+  m_Name: Cheese1
   m_EditorClassIdentifier: 
-  id: Spice1
+  id: Cheese1
   foodData:
     foodValues:
-    - 0
-    - 0
-    - 0
+    - 0.1
+    - 0.1
+    - 0.1
   baseSprite:
-  - sprite: {fileID: -1002083907, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
+  - sprite: {fileID: -876973307, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
     timeOfSprite: 1
     additionalEvent:
       m_PersistentCalls:
         m_Calls: []
   selectedSprites:
-  - sprite: {fileID: -2006677624, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
+  - sprite: {fileID: 1454247029, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
     timeOfSprite: 1
     additionalEvent:
       m_PersistentCalls:
         m_Calls: []
-  - sprite: {fileID: -529224818, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
+  - sprite: {fileID: -1997096364, guid: b1c5e4e373ae80143ac96117423bcfa9, type: 3}
     timeOfSprite: 1
     additionalEvent:
       m_PersistentCalls:
@@ -40,11 +40,11 @@ MonoBehaviour:
   affectedFoodItems: {x: -1, y: 1}
   additionalBuffToAffected:
     foodValues:
-    - 0
-    - 0
-    - 0
+    - 0.05
+    - 0.05
+    - 0.05
   multiplicativeBuffToAffected:
     foodValues:
-    - 2
-    - 2
-    - 2
+    - 1
+    - 1
+    - 1

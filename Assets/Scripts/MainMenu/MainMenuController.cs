@@ -17,9 +17,16 @@ public class MainMenuController : MonoBehaviour
     public List<ComplexAnimationFrame> highlightSprites = new List<ComplexAnimationFrame>();
     private int currentSelectedPet = 0;
 
+    public Button exitGameButton;
+
     public GameObject optionScreen;
+
+
     void Start()
     {
+        #if UNITY_WEBGL
+            exitGameButton.gameObject.SetActive(false);
+        #endif
         TitleScreen();
     }
 

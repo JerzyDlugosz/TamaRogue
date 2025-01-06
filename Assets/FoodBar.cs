@@ -48,9 +48,19 @@ public class FoodBar : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         maxValue = value;
     }
 
-    public float GetActualFillValue()
+    public float GetActualValue()
     {
-        return actualValueImage.fillAmount;
+        return actualValue;
+    }
+
+    public float GetMaxValue()
+    {
+        return maxValue;
+    }
+
+    public float GetExpectedValue()
+    {
+        return expectedValue;
     }
 
     private void SetupActualValue()

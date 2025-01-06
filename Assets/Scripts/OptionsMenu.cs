@@ -48,7 +48,7 @@ public class OptionsMenu : MonoBehaviour
     public void OnMainVolumeSliderChange(Slider slider)
     {
         GameStateManager.instance.audioManager.mainVolume = slider.value;
-        PlayerPrefs.SetFloat("MusicVolume", slider.value);
+        PlayerPrefs.SetFloat("MainVolume", slider.value);
     }
 
     public void OnMusicVolumeSliderChange(Slider slider)

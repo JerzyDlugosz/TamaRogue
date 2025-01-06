@@ -116,17 +116,20 @@ public class GameManagerScript : MonoBehaviour
                 currentItemsOnScreen--;
             }
             player.remainingDiscards--;
+
             fooditemsController.RemoveObjectFromSelectedList();
 
             fooditemsController.DiscardAnimation();
             fooditemsController.selectedFoodObjects.Clear();
+            RefreshInfoPanel();
             Roll();
         }
     }
 
+    public List<List<float>> playedValues = new List<List<float>>();
+
     public void ApplyEffects()
     {
-        List<List<float>> playedValues = new List<List<float>>();
         playedFoodValues = new List<float> { 0, 0, 0 };
         for (int i = 0; i < player.playedFoodItems.Count; i++)
         {

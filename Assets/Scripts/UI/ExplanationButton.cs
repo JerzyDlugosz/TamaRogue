@@ -24,7 +24,8 @@ public class ExplanationButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
         var player = GameManagerScript.instance.player;
         for (int i = 0; i < FIC.instantiatedFoodObjects.Count; i++)
         {
-            FIC.instantiatedFoodObjects[i].ShowItemData(player.playedFoodItems[i].foodData.foodValues);
+            //FIC.instantiatedFoodObjects[i].ShowItemData(player.playedFoodItems[i].foodData.foodValues);
+            FIC.instantiatedFoodObjects[i].ShowItemData(GameManagerScript.instance.playedValues[i]);
         }
         foreach (var item in foodBars)
         {
@@ -36,8 +37,8 @@ public class ExplanationButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         infoPanel.SetActive(true);
         evoCount.SetActive(true);
-        playCount.text = $"<sprite=2 tint>{GameManagerScript.instance.player.remainingPlays}";
-        discardCount.text = $"<sprite=1 tint>{GameManagerScript.instance.player.remainingDiscards}";
+        playCount.text = $"<sprite=2 tint> {GameManagerScript.instance.player.remainingPlays}";
+        discardCount.text = $"<sprite=1 tint> {GameManagerScript.instance.player.remainingDiscards}";
         evoText.text = $"{GameManagerScript.instance.player.currentEvoStep}/{GameManagerScript.instance.player.maxEvoSteps[GameManagerScript.instance.player.currentEvolutionNumber]} Evo";
         ShowItemValues();
     }

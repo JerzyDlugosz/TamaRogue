@@ -159,6 +159,8 @@ MonoBehaviour:
   audioManager: {fileID: 2075616898}
   LoadingSceneNumber: 0
   ChosenDeck: 0
+  playerInput: {fileID: 0}
+  currentResolution: 2
 --- !u!4 &2075616894
 Transform:
   m_ObjectHideFlags: 0

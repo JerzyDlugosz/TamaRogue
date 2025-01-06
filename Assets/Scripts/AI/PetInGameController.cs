@@ -58,10 +58,10 @@ public class PetInGameController : MonoBehaviour
     {
         var evoNumber = GameManagerScript.instance.player.currentEvolutionNumber;
         evoFrames.Clear();
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 16; i++)
         {
-            evoFrames.Add(new ComplexAnimationFrame(allSprites[evoNumber].sprites[0], 2f / ((i/4) + 1)));
-            evoFrames.Add(new ComplexAnimationFrame(allSprites[evoNumber + 1].sprites[0], 2f / ((i/4) + 1)));
+            evoFrames.Add(new ComplexAnimationFrame(allSprites[evoNumber].sprites[0], 2f / ((i/3) + 1)));
+            evoFrames.Add(new ComplexAnimationFrame(allSprites[evoNumber + 1].sprites[0], 2f / ((i/3) + 1)));
         }
         evoFrames.Add(new ComplexAnimationFrame(allSprites[evoNumber + 1].sprites[0], 2f));
     }

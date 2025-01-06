@@ -31,7 +31,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        mainVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
+        mainVolume = PlayerPrefs.GetFloat("MainVolume", 0.5f);
         musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
         effectsVolume = PlayerPrefs.GetFloat("EffectsVolume", 0.5f);
     }

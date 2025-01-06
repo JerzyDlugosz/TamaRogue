@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "ChangeResolution",
+                    "type": "Button",
+                    "id": "e0ffdd89-6ae3-4305-a54a-e9b0da8eea15",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -38,22 +47,11 @@
                 },
                 {
                     "name": "",
-                    "id": "73be0540-d6a3-40ac-a4ee-937fada2893f",
-                    "path": "<Pen>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Point",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "00ac7d66-b7fe-42aa-9d4e-68805e2586ff",
                     "path": "<Touchscreen>/touch*/position",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Touch",
                     "action": "Point",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -71,34 +69,23 @@
                 },
                 {
                     "name": "",
-                    "id": "c4e02c37-77cb-4396-8f9a-dea7196a4bdc",
-                    "path": "<Pen>/tip",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Click",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "c685b3c9-115d-4b14-96a6-efc3ed1ce8d8",
                     "path": "<Touchscreen>/touch*/press",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Touch",
                     "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "ece75836-b4f7-4fdb-9d72-818864ef12fb",
-                    "path": "<XRController>/trigger",
+                    "id": "06dc0fce-cba6-48b1-9abf-2df8f7d2975f",
+                    "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "Click",
+                    "groups": "Mouse",
+                    "action": "ChangeResolution",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -112,6 +99,22 @@
             "devices": [
                 {
                     "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
                     "isOptional": false,
                     "isOR": false
                 }

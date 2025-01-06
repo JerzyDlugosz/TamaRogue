@@ -8,7 +8,7 @@ public class DeckManager : MonoBehaviour
     public List<Deck> decks;
     public int currentDeck;
 
-    private void Awake()
+    private void Start()
     {
         currentDeck = GameStateManager.instance.ChosenDeck;
     }

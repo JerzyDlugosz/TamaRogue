@@ -19,8 +19,8 @@ public class FoodBarsController : MonoBehaviour
         {
             float val = values[i];
 
-            if (val > 1)
-                foodBars[i].SetActualValue(1);
+            if (val > foodBars[i].GetMaxValue())
+                foodBars[i].SetActualValue(foodBars[i].GetMaxValue());
             else
                 foodBars[i].SetActualValue(val);
         }
@@ -55,10 +55,10 @@ public class FoodBarsController : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            float val = foodBars[i].GetActualFillValue() + values[i];
+            float val = foodBars[i].GetActualValue() + values[i];
 
-            if (val > 1)
-                foodBars[i].SetExpectedValue(1);
+            if (val > foodBars[i].GetMaxValue())
+                foodBars[i].SetExpectedValue(foodBars[i].GetMaxValue());
             else
                 foodBars[i].SetExpectedValue(val);
         }
